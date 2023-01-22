@@ -66,7 +66,7 @@ model = pickle.load(open('img_model.p', 'rb'))
 
 from PIL import Image, ImageDraw, ImageFont
 
-path1 = r'C:\Users\elagina\Documents\keras-tutorial\keras-tutorial\images\\'
+path1 = r'C:\Users\elagina\Documents\images\\'
 for image in os.listdir(path1):
     img = imread(path1 + image)
     img_resize = resize(img, (150, 150, 3))
